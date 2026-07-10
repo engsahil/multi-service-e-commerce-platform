@@ -1,0 +1,4 @@
+import type { MetadataRoute } from "next";
+const routes = ["", "/services", "/about", "/contact", "/terms", "/privacy", "/login", "/signup"];
+const serviceSlugs = ["photo-editing", "video-editing", "website-development", "app-development", "windows-installation", "pc-games", "book-cover-art", "script-writing", "assignment-writing", "other-services"];
+export default function sitemap(): MetadataRoute.Sitemap { const base = process.env.NEXT_PUBLIC_APP_URL || "http://localhost:3000"; return [...routes.map((route) => ({ url: `${base}${route}`, changeFrequency: "monthly" as const })), ...serviceSlugs.map((slug) => ({ url: `${base}/services/${slug}`, changeFrequency: "weekly" as const }))]; }
