@@ -1,57 +1,58 @@
 export default function PaymentMethods() {
   return (
-    <div className="rounded-xl border border-neutral-800 bg-neutral-900 p-6 space-y-6">
+    <div className="rounded-xl border border-neutral-700 bg-neutral-900 p-6 space-y-6 text-white">
 
-      <h2 className="text-2xl font-bold">
-        Payment Methods
+      <h2 className="text-2xl font-bold text-white">
+        💳 Payment Methods
       </h2>
 
-      {/* Meezan */}
-
-      <div className="rounded-lg border border-neutral-700 p-4">
-
-        <h3 className="font-bold text-lg">
+      {/* Meezan Bank */}
+      <div className="rounded-lg border border-neutral-700 bg-neutral-800 p-5">
+        <h3 className="text-xl font-bold text-orange-400">
           🏦 Meezan Bank
         </h3>
 
-        <p><strong>Account Title:</strong> M. Sanwal Rasheed</p>
+        <p className="mt-3">
+          <strong>Account Title:</strong> M. Sanwal Rasheed
+        </p>
 
-        <p><strong>IBAN:</strong></p>
+        <p>
+          <strong>IBAN:</strong>
+        </p>
 
-        <code>
+        <code className="block rounded bg-black p-2 mt-1 text-green-400">
           PK52MEZN0000300114134514
         </code>
 
-        <p><strong>Account Number:</strong></p>
+        <p className="mt-3">
+          <strong>Account Number:</strong>
+        </p>
 
-        <code>
+        <code className="block rounded bg-black p-2 mt-1 text-green-400">
           00300114134514
         </code>
-
       </div>
 
       {/* Easypaisa */}
-
-      <div className="rounded-lg border border-neutral-700 p-4">
-
-        <h3 className="font-bold text-lg">
+      <div className="rounded-lg border border-green-700 bg-neutral-800 p-5">
+        <h3 className="text-xl font-bold text-green-400">
           💚 Easypaisa
         </h3>
 
-        <p>0325-8104093</p>
-
+        <code className="block rounded bg-black p-2 mt-3 text-green-400">
+          0325-8104093
+        </code>
       </div>
 
       {/* JazzCash */}
-
-      <div className="rounded-lg border border-neutral-700 p-4">
-
-        <h3 className="font-bold text-lg">
+      <div className="rounded-lg border border-red-700 bg-neutral-800 p-5">
+        <h3 className="text-xl font-bold text-red-400">
           ❤️ JazzCash
         </h3>
 
-        <p>0325-8104093</p>
-
+        <code className="block rounded bg-black p-2 mt-3 text-red-400">
+          0325-8104093
+        </code>
       </div>
 
     </div>
