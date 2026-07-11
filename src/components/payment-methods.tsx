@@ -113,11 +113,17 @@ export default function PaymentMethods() {
 
       </div>
 
-      {/* Easypaisa */}
+      
 
-      className="rounded-2xl border border-green-600/40 bg-gradient-to-br from-green-950 to-neutral-900 p-6 shadow-lg"
+     {/* Easypaisa */}
 
-        <div className="flex items-center justify-between">
+{/* Easypaisa */}
+
+<div className="rounded-3xl border border-green-500/20 bg-gradient-to-br from-[#071A14] via-[#0B1F18] to-[#111827] p-7 shadow-2xl transition-all duration-300 hover:-translate-y-1 hover:shadow-green-500/20">
+
+  <div className="flex items-center justify-between">
+
+
 
           <div className="flex items-center gap-4">
 
@@ -172,11 +178,12 @@ export default function PaymentMethods() {
 
             <div className="rounded-2xl bg-white p-2 shadow-lg">
               <Image
-                src="/jazzcash.svg.png"
-                alt="JazzCash"
-                width={44}
-                height={44}
-              />
+  src="/jazzcash.svg"
+  alt="JazzCash"
+  width={44}
+  height={44}
+/>
+                
             </div>
 
             <div>
