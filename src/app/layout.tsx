@@ -2,7 +2,6 @@ import Link from "next/link";
 import { MessageCircle } from "lucide-react";
 import type { Metadata } from "next";
 import type { ReactNode } from "react";
-import { getCurrentUser } from "@/lib/auth";
 import { AppProviders } from "@/components/providers";
 import { Header } from "@/components/header";
 import { Footer } from "@/components/footer";
@@ -43,8 +42,7 @@ export default async function RootLayout({
 }: {
   children: ReactNode;
 }) {
-  const user = await getCurrentUser();
-
+  
   const whatsappUrl = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(
     WHATSAPP_MESSAGE
   )}`;
@@ -52,10 +50,14 @@ export default async function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body>
-        <AppProviders user={user}>
-          <Header />
+        <AppProviders>
+    <Header user={null} />
           <main>{children}</main>
-          <Footer />
+          <Footer
+  email="engsahil13@gmail.com"
+  whatsapp="https://wa.me/923258104093"
+  
+/>
 
           <Link
             href={whatsappUrl}
