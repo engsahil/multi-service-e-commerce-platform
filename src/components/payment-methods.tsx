@@ -32,11 +32,11 @@ export default function PaymentMethods() {
 
             <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-white p-2 shadow-lg">
   <Image
-    src="/meezan-bank.svg"
-    alt="Meezan Bank"
-    width={44}
-    height={44}
-  />
+  src="/meezan-bank.png"
+  alt="Meezan Bank"
+  width={44}
+  height={44}
+/>
 </div>
 
             <div>
@@ -115,9 +115,9 @@ export default function PaymentMethods() {
 
       
 
-     {/* Easypaisa */}
+     
 
-{/* Easypaisa */}
+{/* Easypaisa */}   
 
 <div className="rounded-3xl border border-green-500/20 bg-gradient-to-br from-[#071A14] via-[#0B1F18] to-[#111827] p-7 shadow-2xl transition-all duration-300 hover:-translate-y-1 hover:shadow-green-500/20">
 
@@ -129,11 +129,12 @@ export default function PaymentMethods() {
 
   <div className="rounded-xl bg-white p-2 shadow-lg">
     <Image
-      src="/easypaisa.svg"
-      alt="Easypaisa"
-      width={42}
-      height={42}
-    />
+  src="/easypaisa.png"
+  alt="Easypaisa"
+  width={44}
+  height={44}
+/>
+
   </div>
 
   <div>
@@ -178,7 +179,8 @@ export default function PaymentMethods() {
 
             <div className="rounded-2xl bg-white p-2 shadow-lg">
               <Image
-  src="/jazzcash.svg"
+ 
+  src="/jazzcash.png"
   alt="JazzCash"
   width={44}
   height={44}
