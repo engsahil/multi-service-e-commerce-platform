@@ -15,7 +15,7 @@ export function Footer({ email, whatsapp, instagram }: { email: string; whatsapp
         <div><h3>Company</h3><Link href="/about">{t("about")}</Link><Link href="/contact">{t("contact")}</Link><Link href="/terms">{t("terms")}</Link><Link href="/privacy">{t("privacy")}</Link></div>
         <div><h3>{t("contact")}</h3>{email && <a href={`mailto:${email}`}><Mail size={16} />{email}</a>}{whatsapp && <a href={whatsapp} target="_blank" rel="noreferrer"><MessageCircle size={16} />WhatsApp</a>}{instagram && <a href={instagram} target="_blank" rel="noreferrer"><Camera size={16} />Instagram</a>}</div>
       </div>
-      <div className="shell footer-bottom"><span>© {new Date().getFullYear()} Mr. Sahil IT. {t("rights")}</span><span>Built for real work—not vanity metrics.</span></div>
+      <div className="shell footer-bottom"><span>© {new Date().getFullYear()} Servixa. {t("rights")}</span><span>Built for real work—not vanity metrics.</span></div>
     </footer>
   );
 }

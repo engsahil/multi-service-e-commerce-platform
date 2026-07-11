@@ -8,10 +8,10 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   metadataBase: new URL(process.env.NEXT_PUBLIC_APP_URL || "http://localhost:3000"),
-  title: { default: "Mr. Sahil IT — Digital & Tech Services", template: "%s | Mr. Sahil IT" },
+  title: { default: "Servixa — Digital & Tech Services", template: "%s | Servixa" },
   description: "Genuine digital services, custom development, creative work, and practical tech support with clear order tracking.",
-  keywords: ["Mr. Sahil IT", "web development", "photo editing", "video editing", "app development", "Windows installation Pakistan"],
-  openGraph: { title: "Mr. Sahil IT", description: "Real work. Clear process.", type: "website", locale: "en_PK" },
+  keywords: ["Servixa", "web development", "photo editing", "video editing", "app development", "Windows installation Pakistan"],
+  openGraph: { title: "Servixa", description: "Real work. Clear process.", type: "website", locale: "en_PK" },
 };
 
 export default async function RootLayout({ children }: { children: ReactNode }) {

@@ -1,4 +1,4 @@
-# Mr. Sahil IT — deployment guide
+# Servixa — deployment guide
 
 ## 1. Recommended hosting
 

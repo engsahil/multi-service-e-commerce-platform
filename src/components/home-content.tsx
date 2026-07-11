@@ -20,7 +20,7 @@ export function HomeContent({ services }: { services: Service[] }) {
             <div className="hero-actions"><Link href="/services" className="button button-accent">{t("explore")} <ArrowRight size={18}/></Link><Link href="/contact" className="button button-outline">{t("quote")}</Link></div>
             <div className="hero-proof"><span><Check size={16}/>{t("genuine")}</span><span><LockKeyhole size={16}/>{locale === "ur" ? "محفوظ فائلیں" : "Protected project files"}</span></div>
           </div>
-          <div className="hero-visual reveal" style={{ animationDelay: "120ms" }} aria-label="Mr. Sahil IT service overview">
+          <div className="hero-visual reveal" style={{ animationDelay: "120ms" }} aria-label="Servixa service overview">
             <div className="visual-card visual-main"><div className="visual-grid"><div className="visual-tile"><Code2 size={31}/><div><b>{locale === "ur" ? "کسٹم ڈیولپمنٹ" : "Custom development"}</b><br/><small>{locale === "ur" ? "ویب سائٹس اور ایپس" : "Websites & apps"}</small></div></div><div className="visual-tile"><Video size={26}/><div><b>{locale === "ur" ? "تخلیقی کام" : "Creative work"}</b></div></div><div className="visual-tile"><MonitorCog size={26}/><div><b>{locale === "ur" ? "ٹیک سپورٹ" : "Tech support"}</b></div></div></div></div>
             <div className="visual-card floating-note"><span><Check size={16}/></span><div>{locale === "ur" ? "کام مکمل" : "Delivery ready"}<br/><small className="muted">{locale === "ur" ? "محفوظ ڈاؤن لوڈ" : "Protected download"}</small></div></div>
             <div className="visual-card floating-order"><i className="pulse"/>{locale === "ur" ? "لائیو آرڈر ٹریکنگ" : "Live order tracking"}</div>

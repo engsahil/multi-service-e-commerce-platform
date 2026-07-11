@@ -11,7 +11,7 @@ export async function POST(request: Request) {
     await db.insert(contactRequests).values({ name, email, phone: phone || null, subject: subject.slice(0, 180), message });
     const [admin] = await db.select({ id: users.id }).from(users).where(eq(users.role, "admin")).limit(1);
     if (admin) await db.insert(notifications).values({ userId: admin.id, title: "New enquiry", message: `${name} sent a request: ${subject}`, href: "/admin" });
-    const ownerEmail = process.env.ADMIN_EMAIL; if (ownerEmail) await sendEmail({ to: ownerEmail, subject: `New Mr. Sahil IT enquiry: ${subject}`, html: `<div style="font-family:Arial,sans-serif"><h2>New enquiry</h2><p><b>From:</b> ${name} (${email})</p><p>${message.replace(/[<>]/g, "")}</p></div>` }).catch(console.error);
+    const ownerEmail = process.env.ADMIN_EMAIL; if (ownerEmail) await sendEmail({ to: ownerEmail, subject: `New Servixa enquiry: ${subject}`, html: `<div style="font-family:Arial,sans-serif"><h2>New enquiry</h2><p><b>From:</b> ${name} (${email})</p><p>${message.replace(/[<>]/g, "")}</p></div>` }).catch(console.error);
     return NextResponse.json({ ok: true });
   } catch { return NextResponse.json({ error: "Could not send your request. Please try again." }, { status: 500 }); }
 }

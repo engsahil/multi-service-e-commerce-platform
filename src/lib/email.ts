@@ -20,7 +20,7 @@ export function statusEmail(name: string, orderNumber: string, status: string) {
   const safeName = escapeHtml(name);
   const safeOrder = escapeHtml(orderNumber);
   const safeStatus = escapeHtml(status.replaceAll("_", " "));
-  return `<div style="font-family:Arial,sans-serif;max-width:560px;margin:auto"><h2>Mr. Sahil IT</h2><p>Hello ${safeName},</p><p>Your order <strong>${safeOrder}</strong> is now <strong>${safeStatus}</strong>.</p><p>Sign in to your dashboard for messages, files, and complete tracking.</p></div>`;
+  return `<div style="font-family:Arial,sans-serif;max-width:560px;margin:auto"><h2>Servixa</h2><p>Hello ${safeName},</p><p>Your order <strong>${safeOrder}</strong> is now <strong>${safeStatus}</strong>.</p><p>Sign in to your dashboard for messages, files, and complete tracking.</p></div>`;
 }
 
 function escapeHtml(value: string) {
