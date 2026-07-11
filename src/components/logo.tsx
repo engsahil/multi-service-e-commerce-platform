@@ -1,28 +1,16 @@
-import Image from "next/image";
 import Link from "next/link";
+import Image from "next/image";
 
 export function Logo({ compact = false }: { compact?: boolean }) {
   return (
     <Link href="/" className="logo" aria-label="Servixa home">
       <Image
-        src="/logo.png"
+        src="/servixa-logo.png"
         alt="Servixa"
-        width={40}
-        height={40}
+        width={170}
+        height={60}
         priority
       />
-
-      {!compact && (
-        <span
-          style={{
-            fontWeight: 700,
-            fontSize: "1.25rem",
-            marginLeft: "10px",
-          }}
-        >
-          Servixa
-        </span>
-      )}
     </Link>
   );
 }
