@@ -1,3 +1,4 @@
+import Image from "next/image";
 import CopyButton from "./CopyButton";
 export default function PaymentMethods() {
   return (
@@ -20,15 +21,23 @@ export default function PaymentMethods() {
 
       {/* Meezan Bank */}
 
-      <div className="rounded-2xl border border-emerald-700/40 bg-gradient-to-br from-emerald-950 to-neutral-900 p-6 shadow-lg">
+    
+{/* Meezan Bank */}
+
+<div className="rounded-3xl border border-green-500/20 bg-gradient-to-br from-[#0B1220] via-[#111827] to-[#1F2937] p-7 shadow-2xl transition-all duration-300 hover:-translate-y-1 hover:shadow-green-500/20">
 
         <div className="flex items-center justify-between">
 
           <div className="flex items-center gap-4">
 
-            <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-emerald-600 text-3xl">
-              🏦
-            </div>
+            <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-white p-2 shadow-lg">
+  <Image
+    src="/meezan-bank.svg"
+    alt="Meezan Bank"
+    width={44}
+    height={44}
+  />
+</div>
 
             <div>
 
@@ -106,21 +115,34 @@ export default function PaymentMethods() {
 
       {/* Easypaisa */}
 
-      <div className="rounded-2xl border border-green-600/40 bg-gradient-to-br from-green-950 to-neutral-900 p-6 shadow-lg">
+      className="rounded-2xl border border-green-600/40 bg-gradient-to-br from-green-950 to-neutral-900 p-6 shadow-lg"
 
         <div className="flex items-center justify-between">
 
-          <div>
+          <div className="flex items-center gap-4">
 
-            <h3 className="text-xl font-bold text-white">
-              Easypaisa
-            </h3>
+  <div className="rounded-xl bg-white p-2 shadow-lg">
+    <Image
+      src="/easypaisa.svg"
+      alt="Easypaisa"
+      width={42}
+      height={42}
+    />
+  </div>
 
-            <p className="text-sm text-neutral-300">
-              Mobile Wallet
-            </p>
+  <div>
 
-          </div>
+    <h3 className="text-xl font-bold text-white">
+      Easypaisa
+    </h3>
+
+    <p className="text-sm text-neutral-400">
+      Mobile Wallet
+    </p>
+
+  </div>
+
+</div>
 
           <span className="rounded-full bg-green-600 px-4 py-2 text-sm text-white">
             Active
@@ -141,52 +163,120 @@ export default function PaymentMethods() {
 
       {/* JazzCash */}
 
-      <div className="rounded-2xl border border-red-600/40 bg-gradient-to-br from-red-950 to-neutral-900 p-6 shadow-lg">
+
+      <div className="rounded-3xl border border-red-500/20 bg-gradient-to-br from-[#220909] via-[#1A1111] to-[#111827] p-7 shadow-2xl transition-all duration-300 hover:-translate-y-1 hover:shadow-red-500/20">
 
         <div className="flex items-center justify-between">
 
-          <div>
+          <div className="flex items-center gap-4">
 
-            <h3 className="text-xl font-bold text-white">
-              JazzCash
-            </h3>
+            <div className="rounded-2xl bg-white p-2 shadow-lg">
+              <Image
+                src="/jazzcash.svg.png"
+                alt="JazzCash"
+                width={44}
+                height={44}
+              />
+            </div>
 
-            <p className="text-sm text-neutral-300">
-              Mobile Wallet
-            </p>
+            <div>
+              <h3 className="text-xl font-bold text-white">
+                JazzCash
+              </h3>
+
+              <p className="text-sm text-neutral-400">
+                Mobile Wallet
+              </p>
+            </div>
 
           </div>
 
-          <span className="rounded-full bg-red-600 px-4 py-2 text-sm text-white">
+          <span className="rounded-full bg-red-600/20 px-4 py-2 text-sm font-medium text-red-300">
             Active
           </span>
 
         </div>
 
-        <div className="mt-5 flex items-center justify-between rounded-xl border border-neutral-700 bg-black/50 p-4">
+        <div className="mt-6">
 
-          <span className="font-mono text-white">
-            03258104093
-          </span>
+          <p className="mb-2 text-sm text-neutral-400">
+            Mobile Number
+          </p>
 
-          <CopyButton value="03258104093" />
+          <div className="flex items-center justify-between rounded-xl border border-neutral-700 bg-black/50 p-4">
+
+            <span className="font-mono text-white">
+              03258104093
+            </span>
+
+            <CopyButton value="03258104093" />
+
+          </div>
+
         </div>
 
       </div>
 
-      <div className="rounded-2xl border border-orange-500/30 bg-orange-500/10 p-6">
+      {/* Payment Instructions */}
 
-        <h4 className="text-lg font-bold text-white">
+      <div className="rounded-3xl border border-orange-500/20 bg-gradient-to-br from-orange-500/10 to-neutral-900 p-7">
+
+        <h4 className="text-xl font-bold text-white">
           Payment Instructions
         </h4>
 
-        <ol className="mt-4 list-decimal space-y-3 pl-5 text-neutral-300">
-          <li>Select your preferred payment method.</li>
-          <li>Complete the payment.</li>
-          <li>Take a screenshot of your payment receipt.</li>
-          <li>Send the screenshot via WhatsApp.</li>
-          <li>Your order will be verified and processed.</li>
-        </ol>
+        <p className="mt-2 text-neutral-400">
+          Please follow these steps to complete your order.
+        </p>
+
+        <div className="mt-6 space-y-4">
+
+          <div className="flex gap-4">
+            <div className="flex h-8 w-8 items-center justify-center rounded-full bg-orange-500 font-bold text-white">
+              1
+            </div>
+            <p className="text-neutral-300">
+              Choose your preferred payment method.
+            </p>
+          </div>
+
+          <div className="flex gap-4">
+            <div className="flex h-8 w-8 items-center justify-center rounded-full bg-orange-500 font-bold text-white">
+              2
+            </div>
+            <p className="text-neutral-300">
+              Complete your payment.
+            </p>
+          </div>
+
+          <div className="flex gap-4">
+            <div className="flex h-8 w-8 items-center justify-center rounded-full bg-orange-500 font-bold text-white">
+              3
+            </div>
+            <p className="text-neutral-300">
+              Take a screenshot of the payment receipt.
+            </p>
+          </div>
+
+          <div className="flex gap-4">
+            <div className="flex h-8 w-8 items-center justify-center rounded-full bg-orange-500 font-bold text-white">
+              4
+            </div>
+            <p className="text-neutral-300">
+              Send the screenshot to us on WhatsApp.
+            </p>
+          </div>
+
+          <div className="flex gap-4">
+            <div className="flex h-8 w-8 items-center justify-center rounded-full bg-orange-500 font-bold text-white">
+              5
+            </div>
+            <p className="text-neutral-300">
+              Your payment will be verified and your order will be processed.
+            </p>
+          </div>
+
+        </div>
 
       </div>
 
